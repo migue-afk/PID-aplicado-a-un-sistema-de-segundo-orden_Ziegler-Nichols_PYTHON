@@ -18,7 +18,7 @@ plt.legend(loc='best')
 plt.show() 
 
 #add PID
-Pcr=6
+Pcr=6.1
 Kp=3.0
 Ti=0.5*Pcr
 Td=0.125*Pcr
@@ -33,6 +33,7 @@ sys3=crtl.tf(num1,den2)
 PID_app=crtl.series(sys1,sys3)
 print(PID_app)
 #Feedback
+#----------------------------------------------------------
 sys4=crtl.feedback(PID_app)
 t2,y2=crtl.step_response(sys4)
 #----------------------------------------------------------
