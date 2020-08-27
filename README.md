@@ -8,7 +8,7 @@ Por tanto se hace referencia la necesidad de obtener un numerador y un denominad
 
 La función de transferencia de un PID en el dominio de la frecuencia está definida de la siguiente forma:
 
-![](https://latex.codecogs.com/svg.latex?G_%7Bc%7D%3D%5Cfrac%7BK_%7Bp%7DT_%7Bp%7DT_%7Bi%7Ds%5E%7B2%7D&plus;K_%7Bp%7DT_%7Bi%7Ds&plus;K_%7Bp%7D%7D%7BT_%7Bi%7Ds%7D)
+![](https://latex.codecogs.com/svg.latex?G_%7Bc%7D%28s%29%3D%5Cfrac%7BK_%7Bp%7DT_%7Bd%7DT_%7Bi%7Ds%5E2&plus;K_%7Bp%7DT_%7Bi%7Ds&plus;K_%7Bp%7D%7D%7BT_%7Bi%7Ds%7D)
 
 La función de transferencia del PID en el dominio de la frecuencia se define en el script Transfer_Fuction_and_PID.py como: 
 a=Kp*Ti*Td, b=Kp*Ti, c=Kp, d=Ti.
