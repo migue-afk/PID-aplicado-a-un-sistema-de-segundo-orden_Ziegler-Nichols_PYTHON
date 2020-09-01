@@ -19,4 +19,18 @@ a=Kp*Ti*Td, b=Kp*Ti, c=Kp, d=Ti.
 
 * sys3=crtl.tf(num1,den2)
 
+### PID
+
+Los valores de Kp, Ti, Td, se derivan de las siguientes ecuaciones:
+
+* Kp=0.6
+* Ti=0.5*Pcr
+* Td=0.125*Pcr
+
+En donde Pcr es el valor de la diferencia de tiempo entre el segundo pico y el primero.
+
+Para una mejor respuesta del controlador es necesario modificar el valor de Kp, en el código se describe el valor de Kp en 3.0, por tanto la respuesta del sistema con el controlador aplicado será más definida, a partir de ese momento se aplica sistemas de ajustes.
+
+
+
 Nota: Al variar el valor crítico de Kc eventualmente cambiara el valor Pcr, el cual es el valor de la diferencia de tiempo entre el segundo pico y el primero, del sistema subamortiguado, observar la figura *Pcr_TF.png*, en posteriores versiones se pretende definir al programa .py para determinar este valor de forma automática, además de agregar sistemas de control discretos.
