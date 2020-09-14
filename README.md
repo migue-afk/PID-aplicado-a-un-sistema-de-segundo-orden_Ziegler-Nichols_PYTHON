@@ -34,3 +34,5 @@ Para una mejor respuesta del controlador es necesario modificar el valor de Kp, 
 
 
 Nota: Al variar el valor crítico de Kc eventualmente cambiara el valor Pcr, el cual es el valor de la diferencia de tiempo entre el segundo pico y el primero, del sistema subamortiguado, observar la figura *Pcr_TF.png*, en posteriores versiones se pretende definir al programa .py para determinar este valor de forma automática, además de agregar sistemas de control discretos.
+
+PD: Las tildes han sido omitidas intencionalmente de algunos archivos de programa y de carpetas relacionadas al código, con el objetivo de evitar problemas de lectura y ejecución del mismo.
